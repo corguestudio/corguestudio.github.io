@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #eee;
+	user-select: none;
+	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(100, 100, 100);
+	border-radius: 8px;
+}
+
+body {
+	overflow-x: hidden;
+	background: #1c1c1e;
+	max-width: 1200px;
+	padding: 0 16px;
+	margin: 32px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+
+	.card {
+		background: #2c2c2e;
+		border-radius: 16px;
+		overflow: hidden;
+		width: 100%;
+
+		.header {
+			padding: 20px;
+			border-bottom: 1px solid #3c3c3e;
+
+			> h3 {
+				font-size: 20px;
+				font-weight: 600;
+				margin: 0;
+			}
+
+			> p {
+				margin-top: 4px;
+			}
+		}
+
+		.content {
+			padding: 20px;
+		}
+	}
+}
+
+.subtitle {
+	font-size: 16px;
+	color: #aaa;
+}
+
+.f {
+	display: flex;
+}
+
+.ac {
+	align-items: center;
+}
+
+.jcc {
+	justify-content: center;
+}
+
+.jcsb {
+	justify-content: space-between;
+}
+
+.fdc {
+	flex-direction: column;
+}
+
+.max-w {
+	width: 100%;
+}
+
+.max-h {
+	height: 100%;
+}
+
+.hover {
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+.click {
+	cursor: pointer;
+}
