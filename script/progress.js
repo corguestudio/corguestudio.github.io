@@ -15,7 +15,7 @@ add(`
 			}
 		}
 	</style>
-	<div class="content f fdc" style="gap: 16px">
+	<div class="content f fdc" style="gap:16px">
 		<div v-for="(e,index) of data" class="f fdc">
 			<div>
 				<div class="f jcsb">
@@ -24,7 +24,7 @@ add(`
 				</div>
 				<p style="color:#999;font-size:14px">{{e[1]}}</p>
 				<div class="max-w" style="height:4px;margin:8px 0;background-color:#484848;border-radius:4px">
-					<div class="max-h" :style="{width:e[2]+'%', animationDelay: index * 0.1 + 's'}" style="background:linear-gradient(to right, #007AFF, #64D2FF);border-radius:4px"></div>
+					<div class="max-h" :style="{width:e[2]+'%',animationDelay:index*0.1+'s'}" style="background:linear-gradient(to right, #007AFF, #64D2FF);border-radius:4px"></div>
 				</div>
 			</div>
 		</div>

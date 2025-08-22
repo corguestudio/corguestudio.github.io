@@ -1,6 +1,6 @@
 /*language=vue*/
 document.body.innerHTML += `
-	<h1 :class="{hide: h}" @vue:mounted="onMounted" id="tip" style="white-space:nowrap;transition:linear all 0.3s" v-scope="app">{{ s }}</h1>
+	<h1 :class="{hide: h}" @vue:mounted="onMounted" id="tip" style="white-space:nowrap;transition:linear all 0.3s" v-scope="app">{{s}}</h1>
 	<style>
 		@scope {
 			.hide {

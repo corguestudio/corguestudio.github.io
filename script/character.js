@@ -14,19 +14,19 @@ add(`
 		}
 	</style>
 	<div class="content" style="position:relative;overflow:hidden">
-		<div style="width:300%;transition:all .5s ease" :style="{marginLeft: i * -100 + '%'}">
-			<div v-for="e of d" style="width:calc(100% / 3);display:inline-block;vertical-align:top">
-				<img :src="'character/' + e.pic + '.png'" style="height:600px;object-fit:cover;margin:0 auto;display:block">
+		<div style="width:300%;transition:all .5s ease" :style="{marginLeft:i*-100+'%'}">
+			<div v-for="e of d" style="width:calc(100%/3);display:inline-block;vertical-align:top">
+				<img :src="'character/'+e.pic+'.png'" style="height:600px;object-fit:cover;margin:0 auto;display:block">
 				<div style="padding:16px" class="f ac fdc">
-					<p style="font-size:24px;font-weight:600;margin-bottom:8px">{{ e.name }}</p>
-					<p style="color:#aaa;font-size:16px">{{ e.desc }}</p>
+					<p style="font-size:24px;font-weight:600;margin-bottom:8px">{{e.name}}</p>
+					<p style="color:#aaa;font-size:16px">{{e.desc}}</p>
 				</div>
 			</div>
 		</div>
-		<svg class="click" fill="#fff" height="50" viewBox="0 0 24 24" width="48" @click="moveLeft">
+		<svg class="click" style="fill:#fff" height="50" viewBox="0 0 24 24" width="48" @click="moveLeft">
 			<path d="M12.2801 16.5307L12.3527 16.4466C12.5706 16.153 12.5464 15.7363 12.2801 15.47L9.56078 12.7507L16.2505 12.7504L16.3523 12.7435C16.7183 12.6939 17.0005 12.3801 17.0005 12.0004L16.9936 11.8986C16.944 11.5325 16.6302 11.2504 16.2505 11.2504L9.55878 11.2507L12.2807 8.52997L12.3534 8.44587C12.5713 8.1523 12.5471 7.73563 12.2809 7.46931C11.9881 7.17637 11.5132 7.17628 11.2203 7.46911L7.21873 11.4691L7.14609 11.5532C6.92816 11.8468 6.95233 12.2636 7.21863 12.5299L11.2195 16.5307L11.3036 16.6033C11.5972 16.8212 12.0138 16.797 12.2801 16.5307ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 20.5C7.30558 20.5 3.5 16.6944 3.5 12C3.5 7.30558 7.30558 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5Z"/>
 		</svg>
-		<svg class="click" fill="#fff" height="48" viewBox="0 0 24 24" width="48" @click="moveRight" style="right: 0">
+		<svg class="click" height="48" style="fill:#fff;right: 0" viewBox="0 0 24 24" width="48" @click="moveRight">
 			<path d="M12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C6.47813 22 2.00098 17.5228 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2ZM12.001 3.5C7.30656 3.5 3.50098 7.30558 3.50098 12C3.50098 16.6944 7.30656 20.5 12.001 20.5C16.6954 20.5 20.501 16.6944 20.501 12C20.501 7.30558 16.6954 3.5 12.001 3.5ZM11.648 7.55308L11.7206 7.46897C11.9869 7.2027 12.4036 7.17849 12.6972 7.39635L12.7813 7.46897L16.7821 11.4698C17.0484 11.7361 17.0726 12.1528 16.8547 12.4464L16.782 12.5306L12.7805 16.5306C12.4876 16.8234 12.0127 16.8233 11.7198 16.5303C11.4536 16.264 11.4295 15.8474 11.6474 15.5538L11.72 15.4697L14.442 12.749L7.75027 12.7493C7.37058 12.7493 7.05678 12.4671 7.00712 12.1011L7.00027 11.9993C7.00027 11.6196 7.28243 11.3058 7.6485 11.2561L7.75027 11.2493L14.44 11.249L11.7206 8.52963C11.4544 8.26336 11.4302 7.8467 11.648 7.55308L11.7206 7.46897L11.648 7.55308Z"/>
 		</svg>
 	</div>
