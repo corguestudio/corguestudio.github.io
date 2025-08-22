@@ -14,8 +14,8 @@ add(`
 		}
 	</style>
 	<div class="content" style="position:relative;overflow:hidden">
-		<div style="width:200%;transition:all .5s ease" :style="{marginLeft: i * -100 + '%'}">
-			<div v-for="e of d" style="width:50%;display:inline-block;vertical-align:top">
+		<div style="width:300%;transition:all .5s ease" :style="{marginLeft: i * -100 + '%'}">
+			<div v-for="e of d" style="width:calc(100% / 3);display:inline-block;vertical-align:top">
 				<img :src="'character/' + e.pic + '.png'" style="height:600px;object-fit:cover;margin:0 auto;display:block">
 				<div style="padding:16px" class="f ac fdc">
 					<p style="font-size:24px;font-weight:600;margin-bottom:8px">{{ e.name }}</p>
@@ -39,6 +39,9 @@ PetiteVue.createApp({
 	}, {
 		name: '微月',
 		pic: 'weiyue'
+	}, {
+		name: '沫',
+		pic: 'mo'
 	}],
 	i: 0,
 	moveLeft() {

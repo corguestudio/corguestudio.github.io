@@ -28,10 +28,12 @@ body {
 	gap: 32px;
 
 	.card {
+		position: relative;
 		background: #2c2c2e;
 		border-radius: 16px;
 		overflow: hidden;
 		width: 100%;
+		animation: init 0.5s cubic-bezier(0.2, 0, 0, 1);
 
 		.header {
 			padding: 20px;
@@ -51,6 +53,13 @@ body {
 		.content {
 			padding: 20px;
 		}
+	}
+}
+
+@keyframes init {
+	from {
+		margin-top: 48px;
+		opacity: 0;
 	}
 }
 
